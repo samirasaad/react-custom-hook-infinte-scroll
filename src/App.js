@@ -34,6 +34,8 @@ function App() {
   const [isLoading, setILoading] = useInfiniteScroll(fetchData);
 
   useEffect(() => {
+    console.log("test login");
+
     fetchData();
   }, []);
 
